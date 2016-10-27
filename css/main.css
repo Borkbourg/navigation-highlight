@@ -8,7 +8,7 @@ html {
 
 li {
   margin: 0;
-  display: inline-block;
+  display: block;
   max-width: 20em;
   background-color: #b2a212;
   text-decoration: none;
@@ -26,25 +26,49 @@ li {
 
 img {
   width: 100%;
-  display: inline-block;
+  display: block;
+  max-width: 25em;
+  vertical-align:center;
 }
 
 nav a:hover{
   background-color: #cc1465;
   color: #fff;
   text-decoration: none;
+  font-size: 1.125rem;
 }
 
 nav a{
   color: #fff;
   text-decoration: none;
-  font-family: Georgia;
+  font-family: Georgia,inherit;
+}
+
+nav li {
+  display: inline-block;
+  text-align: center;
+  margin: 0;
+  padding: .2em .5em .3em;
+  font-size: 1.125rem;
+  display: inline-block;
+  vertical-align: center;
 }
 
 h1 {
   text-align: center;
   font-family: "Sigmar One", cursive;
   color: #b20953;
+  margin: 0;
+  font-size: 3rem;
+}
+
+ol {
+  display: block;
+}
+
+small {
+  margin: 0;
+  padding: 0;
 }
 
 header {
@@ -56,13 +80,17 @@ header {
 footer {
   background-color: #ffe500;
   text-align: center;
+  margin: 0;
 }
 
 h2 {
   font-family: "Sigmar One", cursive;
   color: #b20953;
+  font-size: 1.875rem;
 }
 
 body {
   font-family: Georgia;
+  margin: 0;
+  line-height: 1.5;
 }
