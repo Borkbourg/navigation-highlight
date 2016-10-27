@@ -2,56 +2,58 @@ html {
   box-sizing: border-box;
 }
 
+@-moz-viewport { width: device-width; scale: 1; }
+@-ms-viewport { width: device-width; scale: 1; }
+@-o-viewport { width: device-width; scale: 1; }
+@-webkit-viewport { width: device-width; scale: 1; }
+@viewport { width: device-width; scale: 1; }
+
 *, *::before, *::after {
   box-sizing: inherit;
 }
 
-li {
-  margin: 0;
-  display: block;
-  max-width: 20em;
-  background-color: #b2a212;
-  text-decoration: none;
-  list-style-type: none;
-  border-radius: 5px;
-  text-align: center;
-}
-
-.navigate {
-  margin: .2em;
-  list-style-type: none;
-  line-height: 1.5em;
-  display: inline-block;
-}
-
-img {
-  width: 100%;
-  display: block;
-  max-width: 25em;
-  vertical-align:center;
-}
-
-nav a:hover{
+.current {
   background-color: #cc1465;
   color: #fff;
   text-decoration: none;
   font-size: 1.125rem;
 }
 
-nav a{
+.navigate {
+  margin: .2em;
+  list-style-type: none;
+}
+
+img {
+  width: 100%;
+  display: block;
+  max-width: 25em;
+  vertical-align: center;
+}
+
+nav a {
   color: #fff;
   text-decoration: none;
-  font-family: Georgia,inherit;
+  font-family: Georgia;
+  background-color: #b2a212;
+  list-style-type: none;
+  border-radius: 5px;
+  text-align: center;
+  padding: .2em .5em .3em;
+  font-size: 1.125rem;
+  margin: 0 0 .2em;
+  display: inline-block;
+}
+
+nav a:hover {
+  background-color: #cc1465;
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.125rem;
 }
 
 nav li {
   display: inline-block;
-  text-align: center;
-  margin: 0;
-  padding: .2em .5em .3em;
-  font-size: 1.125rem;
-  display: inline-block;
-  vertical-align: center;
 }
 
 h1 {
@@ -64,6 +66,8 @@ h1 {
 
 ol {
   display: block;
+  padding: 0;
+  text-align: center;
 }
 
 small {
@@ -81,6 +85,7 @@ footer {
   background-color: #ffe500;
   text-align: center;
   margin: 0;
+  padding: 10px;
 }
 
 h2 {
@@ -93,4 +98,15 @@ body {
   font-family: Georgia;
   margin: 0;
   line-height: 1.5;
+  text-decoration-color: #2f2d13;
+}
+
+p {
+  font-size: 1.005em;
+  color: #2f2d13;
+  text-align: left;
+}
+
+main {
+  padding: 0 10px;
 }
